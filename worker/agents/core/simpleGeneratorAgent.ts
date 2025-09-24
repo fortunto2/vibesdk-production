@@ -1620,7 +1620,7 @@ export class SimpleCodeGeneratorAgent extends Agent<Env, CodeGenState> {
         const templateName = this.state.templateDetails?.name || 'scratch';
         // Generate a unique suffix
         const uniqueSuffix = generateId();
-        const projectName = `${this.state.blueprint?.projectName || templateName.toLowerCase().replace(/[^a-z0-9]/g, '-')}-${uniqueSuffix}`.toLowerCase();
+        const projectName = `${(this.state.blueprint?.projectName || templateName).toLowerCase().replace(/[^a-z0-9]/g, '-')}-${uniqueSuffix}`.toLowerCase();
         
         // Generate webhook URL for this agent instance
         const webhookUrl = this.generateWebhookUrl();
