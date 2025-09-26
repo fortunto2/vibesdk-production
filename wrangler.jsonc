@@ -130,6 +130,11 @@
 			"pattern": "code.superduperai.co",
 			"custom_domain": true,
 		},
+		{
+			"pattern": "*.code.superduperai.co",
+			"custom_domain": false,
+			"zone_id": "413125db9862c47bd93de41297b483f8",
+		},
 	],
 	"vars": {
 		"TEMPLATES_REPOSITORY": "https://github.com/cloudflare/vibesdk-templates",
