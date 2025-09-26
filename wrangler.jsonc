@@ -127,13 +127,8 @@
 	],
 	"routes": [
 		{
-			"pattern": "build.cloudflare.dev",
+			"pattern": "code.superduperai.co",
 			"custom_domain": true,
-		},
-		{
-			"pattern": "*build.cloudflare.dev/*",
-			"custom_domain": false,
-			"zone_id": "f14aecaf571802180f79dcba9a8d34c3",
 		},
 	],
 	"vars": {
